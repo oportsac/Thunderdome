@@ -6,7 +6,7 @@ on *:TEXT:!transfer *:#: {
 			msg $chan Enter a positive integer 
 		}
 	} ELSE {
-		MSG $chan Enter a positive integer
+		msg $chan Enter a positive integer
 	}
 }
 	
