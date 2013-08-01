@@ -1,0 +1,12 @@
+on *:TEXT:!transfer *:#: { 
+	IF ($2 isnum) {
+		IF ($2 >= 0) {
+			msg $chan !sockets remove $2 $nick 
+		} ELSE {
+			msg $chan Enter a positive integer 
+		}
+	} ELSE {
+		MSG $chan Enter a positive integer
+	}
+}
+	
